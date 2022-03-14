@@ -1,0 +1,26 @@
+/*#include<stdio.h>
+int main()
+{
+
+}
+*/
+/*
+int main()
+{
+    int x;
+    scanf("%d", &x);
+    printf("X++:%d\n++X:%d\nX--=%d\n--X:%d\n",x++,++x,x--,--x);
+
+}
+*/
+#include<stdio.h>
+int main()
+{
+    int x,a,b,c;
+    scanf("%d", &x);
+    a=b=c=x;
+    printf("X++:%d\n",a++);
+    printf("++X:%d\n",++b);
+    printf("X--:%d\n",c--);
+    printf("--X:%d\n",--x);
+}
