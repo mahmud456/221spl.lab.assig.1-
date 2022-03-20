@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<stdio.h>
+int main()
+{
+/*    double ang,a= sin(3.1416/2);
+    printf("%lf\n",a);
+    scanf("%lf",&ang);
+    ang=ang/180;
+    ang=ang*3.1416;
+    printf("%lf",a=sin(ang));
+*/
+/*    int a,b,d,n;
+    scanf("%d",&n);
+        for(a=0;a<=n;a++)
+        {
+            for(b=n-a;b>0;b--)
+            {
+                printf(" ");
+            }
+            for(d=1;d<=(a+a)+1;d++)
+            {
+                printf("*");
+            }
+            printf("\n");
+        }
+        ALTERNATIVE
+        for(a=1;a<=n;a++)
+        {
+            for(b=1;b<=n-a;b++)
+            {
+                printf(" ");
+            }
+            for(d=1;d<=(a*2)-1;d++)
+            {
+                printf("*");
+            }
+            printf("\n");
+        }
+*/
+    int arr[6][6]={1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6};
+    int i,j,result=0;
+    printf("%d",arr[6][6]);
+    for(i=0;i<=5;i++)
+    {
+        for(j=0;j<=i+1;j++)
+        {
+            result=result+arr[i][j];
+        }
+    }
+    printf("%d",result);
+}
