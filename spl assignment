@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+    int N=10000,n,search;
+    int aqi[N];
+
+    char choice;
+    printf("Enter your choice\n");
+    scanf(" %c",&choice);
+    while(choice!='q')
+    {
+        switch (choice)
+        {
+    case 'r':
+        printf("enter city number:");
+        scanf("%d",&n);
+        for(int i=0; i<n; i++)
+        {
+            scanf("%d",&aqi[i]);
+        }
+        break;
+    case 's':
+        scanf("%d",&search);
+        if(search>=0 && search<n)
+        printf("%d\n",aqi[search]);
+        else
+            printf("Not found\n");
+        break;
+    case 't':
+        for(int j=n; j>=0; j--)
+        {
+            printf("%d\n",aqi[j]);
+        }
+        break;
+    default:
+        printf("Invalid Input\n");
+        }
+
+        printf("Enter your choice\n");
+    scanf(" %c",&choice);
+    }
+
+
+}
+must enter some printf function;
